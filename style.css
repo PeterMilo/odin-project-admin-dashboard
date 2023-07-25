@@ -87,7 +87,7 @@ body {
 
 .content-grid {
     display: grid;
-    grid: 1fr 1fr / 1fr 1fr .8fr;
+    grid: minmax(300px, 420px) 1fr / 1fr 1fr .8fr;
     gap: 1.4em;
 }
 
@@ -134,4 +134,17 @@ body {
 .online {
     grid-row: 2 / 3;
     grid-column: 3 / 4;
+}
+
+#online-header {
+    display: grid;
+    grid-column: 3 / 4;
+}
+
+.online-block {
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 2px 10px 2px rgba(40, 40, 40, 0.2);
+    padding: 1em;
+    margin: 1em 1em 0 0;
 }
